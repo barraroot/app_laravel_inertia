@@ -23,3 +23,7 @@ Route::get('/', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
+
+Route::get('/home', function(){
+    return Inertia::render('Home');
+});

@@ -14,5 +14,6 @@ defineProps({
     <div>
         <h1>Bem Vindo Inertia App.</h1>
         <p>Laravel v{{ laravelVersion }} (PHP v{{ phpVersion }})</p>
+        <Link href="/home">Home</Link>
     </div>
 </template>
