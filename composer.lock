@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "135feb599173e64d4f5e3a7880bf691c",
+    "content-hash": "e515db6d05a0a9c15e1590cc1a14c07c",
     "packages": [
         {
             "name": "brick/math",
@@ -943,16 +943,16 @@
         },
         {
             "name": "inertiajs/inertia-laravel",
-            "version": "v0.6.5",
+            "version": "v0.6.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inertiajs/inertia-laravel.git",
-                "reference": "5fbcf32a86ab0e34c17c20148e50baa095f424af"
+                "reference": "b983c6eb2fe7460df6170060cdd7b47b5ef6832a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/inertiajs/inertia-laravel/zipball/5fbcf32a86ab0e34c17c20148e50baa095f424af",
-                "reference": "5fbcf32a86ab0e34c17c20148e50baa095f424af",
+                "url": "https://api.github.com/repos/inertiajs/inertia-laravel/zipball/b983c6eb2fe7460df6170060cdd7b47b5ef6832a",
+                "reference": "b983c6eb2fe7460df6170060cdd7b47b5ef6832a",
                 "shasum": ""
             },
             "require": {
@@ -965,6 +965,9 @@
                 "orchestra/testbench": "^4.0|^5.0|^6.4|^7.0|^8.0",
                 "phpunit/phpunit": "^8.0|^9.5.8",
                 "roave/security-advisories": "dev-master"
+            },
+            "suggest": {
+                "ext-pcntl": "Recommended when running the Inertia SSR server via the `inertia:start-ssr` artisan command."
             },
             "type": "library",
             "extra": {
@@ -1000,7 +1003,7 @@
             ],
             "support": {
                 "issues": "https://github.com/inertiajs/inertia-laravel/issues",
-                "source": "https://github.com/inertiajs/inertia-laravel/tree/v0.6.5"
+                "source": "https://github.com/inertiajs/inertia-laravel/tree/v0.6.9"
             },
             "funding": [
                 {
@@ -1008,7 +1011,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-01-10T15:59:48+00:00"
+            "time": "2023-01-17T01:02:51+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1199,16 +1202,16 @@
         },
         {
             "name": "laravel/sanctum",
-            "version": "v3.2.0",
+            "version": "v3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sanctum.git",
-                "reference": "bf5cb6c256d19a108bdfaca121b2594da063fbd5"
+                "reference": "d09d69bac55708fcd4a3b305d760e673d888baf9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sanctum/zipball/bf5cb6c256d19a108bdfaca121b2594da063fbd5",
-                "reference": "bf5cb6c256d19a108bdfaca121b2594da063fbd5",
+                "url": "https://api.github.com/repos/laravel/sanctum/zipball/d09d69bac55708fcd4a3b305d760e673d888baf9",
+                "reference": "d09d69bac55708fcd4a3b305d760e673d888baf9",
                 "shasum": ""
             },
             "require": {
@@ -1260,7 +1263,7 @@
                 "issues": "https://github.com/laravel/sanctum/issues",
                 "source": "https://github.com/laravel/sanctum"
             },
-            "time": "2023-01-06T15:43:53+00:00"
+            "time": "2023-01-13T15:41:49+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -5834,6 +5837,67 @@
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
             },
             "time": "2020-07-09T08:09:16+00:00"
+        },
+        {
+            "name": "laravel/breeze",
+            "version": "v1.18.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/breeze.git",
+                "reference": "4280282cff1ed240d6494bbb3405635820a09931"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/4280282cff1ed240d6494bbb3405635820a09931",
+                "reference": "4280282cff1ed240d6494bbb3405635820a09931",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^9.21|^10.0",
+                "illuminate/filesystem": "^9.21|^10.0",
+                "illuminate/support": "^9.21|^10.0",
+                "illuminate/validation": "^9.21|^10.0",
+                "php": "^8.0.2"
+            },
+            "conflict": {
+                "laravel/framework": "<9.37.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Breeze\\BreezeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Breeze\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Minimal Laravel authentication scaffolding with Blade and Tailwind.",
+            "keywords": [
+                "auth",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/breeze/issues",
+                "source": "https://github.com/laravel/breeze"
+            },
+            "time": "2023-01-17T14:08:34+00:00"
         },
         {
             "name": "laravel/pint",
